@@ -14,8 +14,6 @@ from waybackpy import WaybackMachineCDXServerAPI
 api = PushshiftAPI()
 st.set_page_config(layout='wide')
 
-st.selectbox('Pick secret', st.secrets["secretlist"])
-
 with open('user.txt','r') as f:
     stored_users = f.readlines()
     stored_users = list(map(lambda x:x.strip(),stored_users))
